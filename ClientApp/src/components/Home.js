@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export class Home extends Component {
     static displayName = Home.name;
-   <GamepadButton>Add Task</>
+   
 
   render() {
     return (
