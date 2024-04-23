@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-export class FetchData extends Component {
-  static displayName = FetchData.name;
+export class ToDoList extends Component {
+  static displayName = ToDoList.name;
 
   constructor(props) {
     super(props);
@@ -40,12 +40,12 @@ export class FetchData extends Component {
   render() {
     let contents = this.state.loading
       ? <p><em>Loading...</em></p>
-      : FetchData.renderForecastsTable(this.state.forecasts);
+      : ToDoList.renderForecastsTable(this.state.forecasts);
 
     return (
       <div>
-        <h1 id="tableLabel">Weather forecast</h1>
-        <p>This component demonstrates fetching data from the server.</p>
+        <h1 id="tableLabel">To Do List</h1>
+        <p>This component demonstrates your list of tasks.</p>
         {contents}
       </div>
     );
