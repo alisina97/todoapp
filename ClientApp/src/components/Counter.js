@@ -14,8 +14,8 @@ export class Counter extends Component {
       currentCount: this.state.currentCount + 1
     });
   }
-
-  render() {
+   
+  render() { 
     return (
       <div>
         <h1>Counter</h1>
